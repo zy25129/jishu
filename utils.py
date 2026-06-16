@@ -465,7 +465,7 @@ def create_submission(predictions, source_csv_path, output_path='submission.csv'
     mode: 'inverse'=输出resLayer列, 'forward'=输出R列
     """
     source_df = pd.read_csv(source_csv_path)
-    submission = source_df[['yindex', 'Xindex']].copy()
+    submission = source_df[['yindex', 'Xindex', 'Height']].copy()
     if mode == 'inverse':
         columns = [f'resLayer{i}' for i in range(1, 101)]
     else:
