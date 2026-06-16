@@ -3,12 +3,14 @@ __pycache__/
 *.pyc
 *.pyo
 
-# Data (large files, keep out of repo)
-data/
-models/*.pth
-models/*.pkl
+# Data (include in repo)
+# data/
 
-# Results (keep in repo)
+# Models (include in repo)
+# models/*.pth
+# models/*.pkl
+
+# Results (include in repo)
 # results/
 
 # IDE
